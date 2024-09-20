@@ -8,18 +8,18 @@ body {
   font-family: sans-serif;
   background-color: black;
   color: white;
+  
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1% 2%;
   background-color: #3c3a39;
 }
 
 .logo {
-  font-size: 20px;
   color: white;
   font-weight: bold;
 }
@@ -27,17 +27,20 @@ header {
 .menu-icon {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #3c3a39;
-  padding: 5px;
+  padding: 1%;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  height:60%;
+  width:4%
 }
 
 .menu-icon span {
   background-color: white;
-  height: 3px;
-  width: 25px;
-  margin: 3px 0;
+  margin-top: 15%;
+  margin-bottom: 15%;
   transition: background-color 0.3s ease;
 }
 
@@ -50,63 +53,97 @@ header {
 }
 
 .intro {
-  padding: 50px 20px 50px 20px;
+  padding: 5% 4%;
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro h1 {
-  font-size: 48px;
   color: #f18a00;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1%;
 }
 
 .intro h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 1.5%;
 }
 
 .intro p {
-  font-size: 16px;
   line-height: 1.6;
+  margin-bottom: 1.5%;
+
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-top: 15px;
+  gap: 5vw;
+  margin-top: 3%;
 }
 
 .social-icons a {
   text-decoration: none;
 }
 
-.social-icons img {
-  width: 30px;
-  height: 30px;
-}
 
-@media (min-width: 800px) {
+@media (min-width: 375px) {
+    header {
+        height: 6vh;
+      }
+    .logo {
+      font-size: 2vh;
+    }
+  
+    .intro h1 {
+      font-size: 5vh;
+    }
+  
+    .intro h2 {
+      font-size: 4vh;
+    }
+  
+    .intro p {
+      font-size: 2vh;
+    }
+  
+    .social-icons img {
+        width: 8vw;
+        height: 3.5vh;
+    }
+    .menu-icon span{
+        height: 0.4vh;
+        width: 5vw;
+      }
+  }
+
+@media (min-width: 768px) {
+    header {
+        height: 2.5%;
+      }
   .logo {
-    font-size: 24px;
+    font-size: 5vh;
   }
 
   .intro h1 {
-    font-size: 64px;
+    font-size: 8vh;
   }
 
   .intro h2 {
-    font-size: 32px;
+    font-size: 7vh;
   }
 
   .intro p {
-    font-size: 18px;
+    font-size: 4vh;
   }
 
   .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 4vw;
+    height: 8.5vh;
+  }
+  .menu-icon span{
+    height: 0.8vh;
+    width: 2vw;
   }
 }
