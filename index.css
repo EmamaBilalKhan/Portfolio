@@ -8,7 +8,6 @@ body {
   font-family: sans-serif;
   background-color: black;
   color: white;
-  
 }
 
 header {
@@ -33,8 +32,8 @@ header {
   padding: 1%;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  height:60%;
-  width:4%
+  height: 60%;
+  width: 4%;
 }
 
 .menu-icon span {
@@ -73,7 +72,6 @@ header {
 .intro p {
   line-height: 1.6;
   margin-bottom: 1.5%;
-
 }
 
 .social-icons {
@@ -87,41 +85,43 @@ header {
   text-decoration: none;
 }
 
-
 @media (min-width: 375px) {
-    header {
-        height: 6vh;
-      }
-    .logo {
-      font-size: 2vh;
-    }
-  
-    .intro h1 {
-      font-size: 5vh;
-    }
-  
-    .intro h2 {
-      font-size: 4vh;
-    }
-  
-    .intro p {
-      font-size: 2vh;
-    }
-  
-    .social-icons img {
-        width: 8vw;
-        height: 3.5vh;
-    }
-    .menu-icon span{
-        height: 0.4vh;
-        width: 5vw;
-      }
+  header {
+    height: 6vh;
   }
 
+  .logo {
+    font-size: 2vh;
+  }
+
+  .intro h1 {
+    font-size: 5vh;
+  }
+
+  .intro h2 {
+    font-size: 4vh;
+  }
+
+  .intro p {
+    font-size: 2vh;
+  }
+
+  .social-icons img {
+    width: 8vw;
+    height: 3.5vh;
+  }
+
+  .menu-icon span {
+    height: 0.4vh;
+    width: 5vw;
+  }
+}
+
 @media (min-width: 768px) {
-    header {
-        height: 2.5%;
-      }
+  header {
+    height: 2.5%;
+  }
+
   .logo {
     font-size: 5vh;
   }
@@ -142,7 +142,8 @@ header {
     width: 4vw;
     height: 8.5vh;
   }
-  .menu-icon span{
+
+  .menu-icon span {
     height: 0.8vh;
     width: 2vw;
   }
