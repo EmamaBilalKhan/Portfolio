@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +6,8 @@
 }
 
 body {
-  background-color: #1c1a19;
-  color: white;
   font-family: Arial, sans-serif;
-  height: 638px;
   width: 375px;
-  position: relative;
 }
 
 header {
@@ -38,6 +35,7 @@ header {
   height: 24px;
   width: 24px;
   padding: 6px 3px;
+  margin-right: 24px;
 }
 
 .menu-spans span {
@@ -46,7 +44,7 @@ header {
   margin-bottom: 1px;
   height: 3px;
   width: 16px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 .menu-spans:hover {
@@ -71,6 +69,10 @@ header {
 .intro {
   display: flex;
   flex-direction: column;
+  background-color: #1c1a19;
+  color: white;
+  height: 638px;
+  position: relative;
 }
 
 .intro h1 {
@@ -108,7 +110,7 @@ header {
   margin-left: 24px;
 }
 
-.social-icons div {
+.social-icons a {
   width: 40px;
   height: 40px;
 }
@@ -123,4 +125,422 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.Projects {
+  height: 3455px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Work-Heading {
+  height: 83px;
+  width: 327px;
+  font-family: "Crete Round", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  margin-top: 120px;
+  margin-bottom: 108px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 48px;
+  color: black;
+}
+
+.ProjectCards {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 20% 20% 20% 20% 20% 20%;
+}
+
+.Project-Card {
+  width: 375px;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  color: black;
+}
+
+.ProjectImage {
+  height: 237px;
+  width: 327px;
+}
+
+.ProjectDetails {
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.ProjectHeading {
+  height: 36px;
+  width: 327px;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.ProjectDescription {
+  height: 147px;
+  width: 327px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+.SeeProjectButton {
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ff6b00;
+  padding: 12px 12px;
+  height: 48px;
+  width: 124px;
+  margin-top: 12px;
+  align-self: flex-start;
+}
+
+.SeeProjectButton:hover {
+  background-color: #1c1a19;
+}
+
+.ProjectTechStack {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 314px;
+  height: 40px;
+}
+
+.Tech {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.Project-Card-2 {
+  height: 386px;
+  width: 327px;
+  background-image: url(./assets/Project-2-Placeholder.png);
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  color: white;
+  margin: 24px 24px;
+}
+
+.ProjectHeading-2 {
+  height: 81px;
+  width: 295px;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.ProjectDetails-2 {
+  height: 336px;
+  width: 260px;
+  margin: 64px 3px 14px 3px;
+  padding: 8px 22px 16px 8px;
+}
+
+.ProjectDescription-2 {
+  height: 99px;
+  width: 301px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+.ProjectTechStack-2 {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 247px;
+  height: 40px;
+}
+
+.Tech-2 {
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff3d;
+}
+
+.Project-Card-2 > button {
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ff6b00;
+  height: 48px;
+  width: 327px;
+}
+
+.Contact-me-form button {
+  width: 131px;
+  height: 48px;
+  padding: 12px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #ff6b00;
+  color: white;
+  border-width: 0;
+}
+
+.About {
+  width: 375px;
+  height: 1801px;
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.About-me {
+  width: 375px;
+  height: 563px;
+  padding: 120px 24px 120px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.About-me > h1 {
+  width: 327px;
+  height: 79px;
+  font-family: "Crete Round", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  color: #ff6b00;
+}
+
+.About-me > p {
+  width: 327px;
+  height: 148px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  margin: 24px 0;
+}
+
+.About-me > button {
+  border: none;
+  color: white;
+  text-align: center;
+  background-color: #ff6b00;
+  height: 48px;
+  width: 156px;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.Project-Card-2 > button:hover {
+  background-color: #1c1a19;
+}
+
+.About-me > button:hover {
+  color: #1c1a19;
+  background-color: white;
+}
+
+.line {
+  margin: 94px 24px 24px 2px;
+  width: 327px;
+  height: 1px;
+  background-color: white;
+  align-self: center;
+}
+
+.About-bg-image {
+  position: absolute;
+  top: 384px;
+  right: 0;
+}
+
+.Skills {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Skills h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.Skill-List {
+  list-style-type: none;
+}
+
+.Skill-List > li {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 42.67px;
+  color: white;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.Language {
+  width: 225px;
+  height: 281px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Framework {
+  width: 281px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.Skill {
+  width: 267px;
+  height: 336px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Language h2::before,
+.Framework h2::before,
+.Skill h2::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Language h2::before {
+  background-image: url('./assets/diamond.png');
+}
+
+.Framework h2::before {
+  background-image: url('./assets/Rectangle.png');
+}
+
+.Skill h2::before {
+  background-image: url('./assets/circle.png');
+}
+
+.Contact-me {
+  height: auto;
+  width: 375px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 78px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.Contact-me > p {
+  height: 262px;
+  width: 327px;
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 80px;
+  margin-bottom: 58px;
+  text-align: center;
+}
+
+.Contact-me-form {
+  height: 330px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contact-me-form input {
+  padding: 15px 16px;
+  margin-bottom: 24px;
+  border-bottom: solid #dbd8d7;
+  border-width: 0 0 1px 0;
+  width: 327px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #979493;
+}
+
+.Contact-me-form textarea {
+  width: 327px;
+  height: 114px;
+  margin-bottom: 24px;
+  background-color: #fbf8f7;
+  padding: 12px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3c3a39;
+  border: 0;
+}
+
+.Contact-me-form button:hover {
+  background-color: #1c1a19;
+}
+
+footer {
+  width: 375px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
