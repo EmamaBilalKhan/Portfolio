@@ -19,51 +19,56 @@ header {
 }
 
 .logo {
+  height: 44px;
+  width: 94px;
+  padding: 12px 10px;
+  margin-left: 12px;
+}
+
+.logo h1 {
   color: white;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  padding: 12px 10px;
+}
+
+.links {
+  display: none;
+}
+
+.menu-icon {
+  height: 40px;
+  width: 40px;
+  margin: 4px 24px 4px 0;
+  padding: 14px 11px;
 }
 
 .menu-spans {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #3c3a39;
   height: 24px;
   width: 24px;
   padding: 6px 3px;
-  margin-right: 24px;
 }
 
 .menu-spans span {
   background-color: white;
-  margin-top: 2px;
   margin-bottom: 1px;
+  margin-top: 2px;
   height: 3px;
-  width: 16px;
-  border-radius: 2px;
+  width: 18px;
+  border-radius: 3px;
 }
 
 .menu-spans:hover {
   background-color: white;
+  transition: ease-in-out;
 }
 
 .menu-spans:hover span {
   background-color: #3c3a39;
-}
-
-.menu-icons {
-  background-color: #3c3a39;
-  height: 40px;
-  width: 40px;
-  margin-left: 24px;
-}
-
-.menu-icons:hover {
-  background-color: white;
+  transition: ease-in-out;
 }
 
 .intro {
@@ -121,10 +126,33 @@ header {
   margin: 8px;
 }
 
+.social-icons-2 {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+  margin-left: 24px;
+}
+
+.social-icons-2 a {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons-2 img {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+}
+
 .backimg {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.backimg-2 {
+  display: none;
 }
 
 .Projects {
@@ -133,6 +161,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: auto;
 }
 
 .Work-Heading {
@@ -148,6 +177,10 @@ header {
   text-decoration-thickness: 1px;
   text-underline-offset: 48px;
   color: black;
+}
+
+.Work-Heading-Line {
+  display: none;
 }
 
 .ProjectCards {
@@ -168,6 +201,10 @@ header {
 .ProjectImage {
   height: 237px;
   width: 327px;
+}
+
+.ProjectImage-2 {
+  display: none;
 }
 
 .ProjectDetails {
@@ -326,6 +363,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .About-me > h1 {
@@ -383,6 +421,10 @@ header {
   position: absolute;
   top: 384px;
   right: 0;
+}
+
+.About-bg-image-2 {
+  display: none;
 }
 
 .Skills {
@@ -536,6 +578,10 @@ header {
   background-color: #1c1a19;
 }
 
+.email {
+  display: none;
+}
+
 footer {
   width: 375px;
   height: 72px;
@@ -543,4 +589,334 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: white;
+}
+
+@media (min-width: 1050px) {
+  body {
+    width: auto;
+  }
+
+  header {
+    width: auto;
+    height: 72px;
+  }
+
+  .logo {
+    height: 40px;
+    width: 108px;
+    padding: 10px 12px;
+    margin-left: 142px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .links {
+    width: auto;
+    height: auto;
+    margin-right: 142px;
+    display: flex;
+  }
+
+  nav {
+    width: 255px;
+    height: 40px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mail {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    margin-left: 12px;
+    display: inline;
+  }
+
+  .mail-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .intro {
+    width: auto;
+    height: 798px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro h1 {
+    margin: 192px 0 24px 143px;
+    font-size: 72px;
+    width: 566px;
+    height: 160px;
+  }
+
+  .intro h2 {
+    margin: 0 0 24px 143px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .intro p {
+    margin: 0 0 251px 143px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 566px;
+    height: 123px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    position: absolute;
+    height: 200px;
+    width: 40px;
+    top: 299px;
+    left: 36px;
+    align-items: center;
+  }
+
+  .social-icons a {
+    padding: 10;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .backimg {
+    display: none;
+  }
+
+  .backimg-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline;
+  }
+
+  .Projects {
+    height: 1805px;
+    align-items: flex-start;
+  }
+
+  .Work-Heading {
+    width: 315px;
+    height: 52px;
+    text-decoration: none;
+    margin-top: 130px;
+  }
+
+  .Work-Heading-Line {
+    width: 594px;
+    background-color: black;
+    height: 1px;
+    display: inline;
+    margin-top: 156px;
+    margin-left: 24px;
+  }
+
+  .Work-Heading-div {
+    display: flex;
+    margin-right: 153px;
+    margin-left: 153px;
+  }
+
+  .ProjectCards {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+  }
+
+  .Project-Card-2-Section {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 10px;
+    margin-left: 80px;
+    margin-right: 50px;
+  }
+
+  .Project-Card {
+    width: auto;
+    height: 448px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0;
+    margin-left: 90px;
+    margin-right: 90px;
+    color: black;
+  }
+
+  .ProjectImage {
+    display: none;
+  }
+
+  .ProjectImage-2 {
+    height: 448px;
+    width: 684px;
+    display: block;
+  }
+
+  .ProjectDetails {
+    margin-left: 24px;
+  }
+
+  .Project-Card-2 > button {
+    display: none;
+  }
+
+  .ProjectDetails-2 {
+    margin: 170px 3px 8px 3px;
+    padding: 8px 22px 16px 8px;
+  }
+
+  .Project-Card-2 {
+    height: 435px;
+    margin: 37px 10px;
+  }
+
+  .About {
+    height: 1195px;
+    width: auto;
+    position: relative;
+    padding-left: 32px;
+  }
+
+  .About-bg-image {
+    display: none;
+  }
+
+  .About-bg-image-2 {
+    position: absolute;
+    top: 99px;
+    right: 0;
+    display: inline;
+  }
+
+  .About-me > h1 {
+    width: 566px;
+    height: 78px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+  }
+
+  .About-me > p {
+    width: 566px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .About-me > button {
+    height: 48px;
+    width: 156px;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .About-me {
+    width: auto;
+    padding-bottom: 130px;
+  }
+
+  .line {
+    width: 1156px;
+  }
+
+  .Skills {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Language,
+  .Framework,
+  .Skill {
+    margin-top: 0;
+    align-self: flex-start;
+  }
+
+  .Framework {
+    margin-left: 152px;
+    margin-right: 152px;
+  }
+
+  .Contact-me {
+    width: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #dfe1e6;
+    padding-top: 130px;
+  }
+
+  .Contact-me > p {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    width: 455px;
+    height: 256px;
+    margin-top: 0;
+  }
+
+  .form-names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+  }
+
+  .form-names input {
+    width: 250px;
+    margin-right: 24px;
+    margin-left: 0;
+    padding: 15px 16px;
+    margin-bottom: 24px;
+    border-bottom: solid #dbd8d7;
+    border-width: 0 0 1px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #979493;
+  }
+
+  .Contact-me-form input {
+    width: 524px;
+  }
+
+  .Contact-me-form textarea {
+    width: 524px;
+    height: 114px;
+  }
+
+  .email {
+    display: block;
+  }
+
+  .Contact-me-form {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  footer {
+    width: auto;
+  }
 }
