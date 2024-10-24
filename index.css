@@ -16,6 +16,7 @@ header {
   align-items: center;
   background-color: #3c3a39;
   height: 48px;
+  position: relative;
 }
 
 .logo {
@@ -69,6 +70,55 @@ header {
 .menu-spans:hover span {
   background-color: #3c3a39;
   transition: ease-in-out;
+}
+
+.overlay-menu {
+  height: 686px;
+  width: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3c3a39;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 327px;
+  height: 184px;
+  margin-top: 92px;
+}
+
+.overlay-content a {
+  padding: 8px 0 8px 16px;
+  margin: 12px 24px;
+  text-decoration: none;
+  color: #fff5e1;
+  display: block;
+  transition: 0.3s;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  border-bottom: solid 1px #6f6c6b;
+  width: 327px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 48px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.closebtn img {
+  height: 40px;
+  width: 40px;
+}
+
+#overlay-menu {
+  display: none;
 }
 
 .intro {
@@ -143,6 +193,10 @@ header {
   width: 24px;
   height: 24px;
   margin: 8px;
+}
+
+.overlay-content a:hover {
+  color: #f1f1f1;
 }
 
 .backimg {

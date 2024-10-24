@@ -30,6 +30,14 @@
                <span></span>
             </div>
         </div>
+        <div id="overlay-menu" class="overlay-menu">
+            <a href="javascript:void(0)" class="closebtn" id="close-btn"><img src="./assets/cross.png"/></a>
+            <div class="overlay-content">
+              <a class="Portfolio-link" href="#Portfolio">Portfolio</a>
+              <a class="About-link" href="#About">About</a>
+              <a class="Contact-link" href="#Contact">Contact</a>
+            </div>
+        </div>
         <section class="links">
         <nav class="nav">
             <a class="nav-link" href="#">Portfolio</a>
@@ -41,7 +49,7 @@
         </a>
         </section>
     </header>
-    <section class="intro">
+    <section class="intro" id="intro">
         <h1>Hey There. <br> I'm Emama.</h1>
         <h2>I'm a Software Developer</h2>
         <p>
@@ -61,7 +69,7 @@
 
     </section>
     
-    <section class="Projects">
+    <section class="Projects" id="Portfolio">
         <div class="Work-Heading-div">
         <h1 class="Work-Heading">My Recent Works</h1>
         <div class="Work-Heading-Line"></div>
@@ -165,7 +173,7 @@
         </section>
     </section>
 
-    <section class="About">
+    <section class="About" id="About">
         <section class="About-me">
             <h1>About me</h1>
             <p>Hello I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -207,7 +215,7 @@
         <image class="About-bg-image-2" src="./assets/About-illustration-2.png"></image>
 
     </section>
-    <section class="Contact-me">
+    <section class="Contact-me" id="Contact">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>    
             <form class="Contact-me-form">
                 <div class="form-names">
@@ -217,7 +225,7 @@
 
                 <input type="email" class="email" name="email" placeholder="Email address">
                 <textarea name="message" placeholder="Write me something..." maxlength="500"></textarea>
-                <button type="submit">Get in touch</button>
+                <button type="submit" id="form-submit">Get in touch</button>
             </form>
     </section>
     <footer>
@@ -231,3 +239,5 @@
     </footer>
 </body>
 </html>
+<script src="script.js"></script>
+
